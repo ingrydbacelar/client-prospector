@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lead Finder</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="cabecalho">
+      <div class="cabecalho-meta">
+        <span class="badge"><span class="badge-dot"></span>LOCAL · LEAD FINDER</span>
+      </div>
+      <h1>Lead <span class="destaque">Finder</span><span class="cursor">_</span></h1>
+      <p class="subtitulo">Busque empresas por categoria e cidade no Google Business Profile e exporte os resultados em Excel.</p>
+    </header>
+
+    <section class="painel painel-entrada">
+      <div class="linha-rotulo">
+        <label for="categoria-input" class="rotulo-fraco">&gt; Categorias</label>
+      </div>
+      <div class="categoria-row">
+        <input type="text" id="categoria-input" placeholder="Ex.: Clínica de Estética" />
+        <button id="add-categoria-btn" class="botao" type="button">+ ADICIONAR</button>
+      </div>
+      <div id="chips" class="chips"></div>
+
+      <div class="grid-2">
+        <div>
+          <label for="cidade-input" class="rotulo-fraco">&gt; Cidade</label>
+          <input type="text" id="cidade-input" value="Sao Luis" />
+        </div>
+        <div class="uf-field">
+          <label for="estado-input" class="rotulo-fraco">&gt; UF</label>
+          <input type="text" id="estado-input" value="MA" maxlength="2" />
+        </div>
+      </div>
+
+      <label for="quantidade-input" class="rotulo-fraco">&gt; Resultados por categoria: <span id="quantidade-label">10</span></label>
+      <input type="range" id="quantidade-input" min="1" max="10" value="10" />
+
+      <div class="acoes">
+        <button id="start-btn" class="botao botao-destaque">▶ INICIAR BUSCA</button>
+        <span id="statusTexto" class="status-texto"></span>
+      </div>
+
+      <div class="progresso-wrap" id="progressoWrap" hidden>
+        <div class="progresso-barra">
+          <div class="progresso-fill" id="progressoFill"></div>
+        </div>
+        <span id="progressoLabel">0 / 0</span>
+      </div>
+
+      <p id="mensagemErro" class="mensagem-erro" hidden></p>
+    </section>
+
+    <div class="titulo-resultados">
+      <span class="titulo-resultados-esq"><span class="destaque">//</span> Progresso</span>
+    </div>
+
+    <section class="painel painel-tabela">
+      <table id="tabela">
+        <thead>
+          <tr>
+            <th class="col-idx">#</th>
+            <th class="col-url">Categoria</th>
+            <th class="col-status">Status</th>
+          </tr>
+        </thead>
+        <tbody id="tabelaBody"></tbody>
+      </table>
+    </section>
+
+    <div class="titulo-resultados">
+      <span class="titulo-resultados-esq"><span class="destaque">//</span> Log</span>
+    </div>
+
+    <section class="painel painel-log">
+      <pre id="log"></pre>
+    </section>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
