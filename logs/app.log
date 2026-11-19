@@ -1,0 +1,20 @@
+2026-08-04 15:54:00,423 | INFO     | __main__ | Iniciando busca | categoria='Clinica de Estetica' cidade='Contagem' estado='MG' quantidade=10
+2026-08-04 15:54:00,424 | INFO     | app.collector | Chave da API do Google Places detectada. Utilizando a API oficial.
+2026-08-04 15:54:02,303 | INFO     | app.google_places_client | Total de empresas obtidas via Google Places API: 10
+2026-08-04 15:54:02,424 | INFO     | app.exporter | Arquivo Excel exportado: output\Clinica_de_Estetica_Contagem_20260804_155402.xlsx
+2026-09-05 16:32:36,609 | INFO     | __main__ | Iniciando busca | categoria='Contabilidade' cidade='Sao Paulo' estado='SP' quantidade=10
+2026-09-05 16:32:36,611 | INFO     | app.collector | Chave da API do Google Places detectada. Utilizando a API oficial.
+2026-09-05 16:32:38,082 | INFO     | app.google_places_client | Total de empresas obtidas via Google Places API: 10
+2026-09-05 16:32:38,132 | INFO     | app.exporter | Arquivo Excel exportado: output\Contabilidade_Sao_Paulo_20260905_163238.xlsx
+2026-11-09 19:26:24,923 | INFO     | __main__ | Iniciando busca | categoria='Cartomante' cidade='São Paulo' estado='SP' quantidade=10
+2026-11-09 19:26:24,925 | INFO     | app.collector | Chave da API do Google Places detectada. Utilizando a API oficial.
+2026-11-09 19:26:25,899 | INFO     | app.google_places_client | Total de empresas obtidas via Google Places API: 10
+2026-11-09 19:26:25,996 | INFO     | app.exporter | Arquivo Excel exportado: output\Cartomante_São_Paulo_20261109_192625.xlsx
+2026-11-13 14:56:35,946 | INFO     | __main__ | Iniciando busca | categoria='Clinica de estetica' cidade='Sao Luis' estado='MA' quantidade=10
+2026-11-13 14:56:35,947 | INFO     | app.collector | Chave da API do Google Places detectada. Utilizando a API oficial.
+2026-11-13 14:56:36,908 | INFO     | app.google_places_client | Total de empresas obtidas via Google Places API: 10
+2026-11-13 14:56:36,987 | INFO     | app.exporter | Arquivo Excel exportado: output\Clinica_de_estetica_Sao_Luis_20261113_145636.xlsx
+2026-11-13 14:58:51,238 | INFO     | __main__ | Iniciando busca | categoria='Clinica de estetica' cidade='Sao Luis' estado='MA' quantidade=10
+2026-11-13 14:58:51,239 | INFO     | app.collector | Chave da API do Google Places detectada. Utilizando a API oficial.
+2026-11-13 14:58:52,133 | INFO     | app.google_places_client | Total de empresas obtidas via Google Places API: 10
+2026-11-13 14:58:52,192 | INFO     | app.exporter | Arquivo Excel exportado: output\Clinica_de_estetica_Sao_Luis_20261113_145852.xlsx
